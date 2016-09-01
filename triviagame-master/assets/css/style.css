@@ -1,0 +1,106 @@
+/*Background*/
+
+body {
+	background-image: url('../images/mystery.jpg');
+	background-size: 100%, 100%;
+	background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-color: #2f5c5f;
+
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    color: #8B008B;
+}
+
+title, #title {
+	font-family: 'Cinzel', serif;
+	font-size: 56px;
+}
+
+/* Div Sizing **********************************************************************/
+
+#title {
+	margin-bottom: 1.5%%;
+	/*margin-top: 5%;*/
+}
+
+#questionDiv {
+	margin: 1% auto;
+}
+
+
+
+/* Timer ***************************************************************************/
+
+#timerDiv {
+	font-size: 32px;
+}
+
+
+/*Answer Choices********************************************************************/
+
+#questionDiv {
+	/*width: 50%;*/
+
+}
+
+.choice {
+	background-color:rgb(116,131,124, 0.7);
+	z-index: 2;
+	color: white;
+	cursor: pointer; 
+	cursor: hand;
+}
+
+.choice img {
+	max-width: 70%;
+	max-height: 65%;
+	border: 2px solid white;
+}
+
+.choice:hover{
+	color: #0a2129 ;
+}
+
+
+
+/* Start Button ********************************************************************/
+
+#startButton {
+	background-color: #9400D3;
+	color: #F8F8FF;
+	border-color: #0a2129;
+	margin-top: 5%;
+}
+
+
+/* Media Queries **************************************************************/
+
+@media only screen and (max-width: 979px){
+	#questionDiv {
+		color: white;
+		font-size: 30px;
+		margin-top: 10%;
+		margin-bottom: 5%;
+	}
+
+	.choice {
+		font-size: 28px;
+	}
+}	
+
+
+@media only screen and (min-width: 980px) {
+
+	#timerDiv {
+		padding-top: 15%;
+		padding-left: 6.5%;
+		
+	}
+
+	#questionDiv {
+		margin-top: 10%;
+		margin-bottom: 5%;
+	}
+}
